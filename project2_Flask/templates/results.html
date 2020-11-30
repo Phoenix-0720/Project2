@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+     <style>
+body {
+  background-color: linen;
+}
+
+h1 {text-align: center;}
+p {text-align: center;}
+body {text-align: center;}
+div {text-align: center;}
+
+</style>
+</head>
+<body>
+    {% for i in response %}
+        <p>{{ i }}</p>
+    {% endfor %}
+
+    {% if movie_name == "pulp fiction" %}
+        <em>Welcome to On Cinema Movie Reviews</em>
+    {% else %}
+        <em>Here is the info you requested.</em>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link rel="stylesheet" href="/project2_Flask/static/project2.css">
+    <style>
+body {
+  background-color: linen;
+}
+
+h1 {text-align: center;}
+p {text-align: center;}
+body {text-align: center;}
+label {text-align: center;}
+div {text-align: center;}
+
+</style>
+</head>
+
+<body>
+    <h1>On Cinema - Movie Reviews</h1>
+    <form action = " " method = "POST" name = "sample">
+        {{ form.csrf_token }}
+        {{ form.hidden_tag() }}
+
+        <p>First Name:
+            {{ form.first_name() }}
+        </p>
+
+        <p>
+            Genre
+            {{ form.genre() }}
+        </p>
+
+        <p>
+            Movie Name:
+            {{ form.movie_name() }}
+        </p>
+        <p>
+            <input type = "submit" value = "Submit">
+        </p>
+
+    </form>
+</body>
+</html>
